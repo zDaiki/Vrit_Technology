@@ -38,7 +38,7 @@ const Task1 = () => {
 
   const handleImage1Leave = () => {
     setAnimateImage1('fade-zoom-out');
-    setTimeout(() => setHoveredImage1(false), 2000); 
+    setTimeout(() => setHoveredImage1(false), 1); 
   };
 
   const handleImage4Enter = () => {
@@ -48,7 +48,7 @@ const Task1 = () => {
 
   const handleImage4Leave = () => {
     setAnimateImage4('fade-zoom-out');
-    setTimeout(() => setHoveredImage4(false), 2000);
+    setTimeout(() => setHoveredImage4(false), 1);
   };
 
   return (
@@ -157,8 +157,7 @@ const Task1 = () => {
 
           <div
             className={`absolute top-[115px] left-0 w-20 h-20 rounded-2xl overflow-hidden shadow-md z-20 transition-all duration-500 ${
-              isHovered ? 'translate-x-[-190px] translate-y-[0px] floating2' : ''} ${
-             hoveredImage1 ? 'neon-glow' : ''}`}
+              isHovered ? 'translate-x-[-190px] translate-y-[0px] floating2' : ''}`}
           >
             <img src={image6} alt="User 6" className="w-full h-full object-cover" />
           </div>

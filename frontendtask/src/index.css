@@ -77,7 +77,7 @@
     0 0 10px #8ad3f3,
     0 0 20px #c8eeff,
     0 0 30px #d0f1ff;
-  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out;
 }
 /* vector image */
 .task2-wrapper .floating1 {

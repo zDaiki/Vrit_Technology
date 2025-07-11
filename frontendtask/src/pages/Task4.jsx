@@ -29,7 +29,7 @@ const Task4 = () => {
   }, []);
 
   return (
-    <div className="w-screen min-h-screen flex justify-center items-center bg-white">
+    <div className="w-full min-h-screen flex justify-center items-center bg-white">
       <div
         style={{
           display: 'grid',
@@ -46,7 +46,7 @@ const Task4 = () => {
             return (
               <div
                 key={`${rowIdx}-${colIdx}`}
-                className={`transition-all duration-500 ease-in-out border border-gray-600 ${
+                className={`transition-all duration-500 ease-in-out border border-gray-600 box-border ${
                   isLit ? 'bg-purple-600 opacity-100' : 'bg-gray-300 opacity-10'
                 }`}
                 style={{ height: '75px' }}

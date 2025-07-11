@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-white shadow-md sticky top-0 z-[99999]">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         <div className="text-xl font-bold text-gray-800">My Tasks</div>
         <div className="space-x-6">

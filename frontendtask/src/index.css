@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@keyframes float1 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(18px); }
+}
+
+@keyframes float3 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes float4 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(20px); }
+}
+
+.floating1 {
+  animation: float1 5s ease-in-out infinite;
+}
+
+.floating2 {
+  animation: float2 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.floating3 {
+  animation: float3 5s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.floating4 {
+  animation: float4 5s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeZoomOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.fade-zoom-in {
+  animation: fadeZoomIn 2s ease forwards;
+}
+
+.fade-zoom-out {
+  animation: fadeZoomOut 0.2s ease forwards;
+}
+
+
+.neon-glow {
+  box-shadow:
+    0 0 5px #84daff,   
+    0 0 10px #b1e8ff,
+    0 0 10px #8ad3f3,
+    0 0 20px #c8eeff,
+    0 0 30px #d0f1ff;
+  transition: box-shadow 0.2s ease-in-out;
+}
+/* vector image */
+.task2-wrapper .floating1 {
+  animation: float1 3s ease-in-out infinite;
+}
+
+.task2-wrapper .floating2 {
+  animation: float2 4s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+.task2-wrapper .floating3 {
+  animation: float3 4s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+.task2-wrapper .floating4 {
+  animation: float4 3s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes wiggle-horizontal {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+.animate-wiggle-horizontal {
+  animation: wiggle-horizontal 0.9s ease-in-out infinite;
+  animation-play-state: paused;
+}
+
+.group:hover .animate-wiggle-horizontal {
+  animation-play-state: running;
+}
+

@@ -1,21 +1,39 @@
-# Vrit Technologies - Frontend Engineering Intern Task
+# Vrit Technology Frontend Intern Tasks
 
-This is my UI Round submission.
+Welcome to my submission for the **Frontend Engineering Intern** selection process at Vrit Technologies.  
+This repository contains four individual React-based UI tasks designed to showcase my frontend skills including React, Tailwind CSS, animations, and interactive UI components.
 
-## 📦 Tech Used
-- React
-- Tailwind CSS
-- React Router
+---
 
-## ✨ Features
-- Floating animated avatars
-- Tooltip with testimonial card
-- Animated icons (happy, like, trophy)
+## Project Overview
 
-## 🚀 Live demo
-[vrit-technology.vercel.app](https://vrit-technology.vercel.app/)
+This project is a React app with four distinct tasks, each demonstrating different UI/UX concepts and frontend development techniques:
 
-## 🛠 Run locally
+- **Task 1:** Interactive testimonial section with animated user avatars, testimonial cards on hover, and floating GIF icons.
+- **Task 2:** Skill journey cards with hover effects and dynamic content changes for the blue card.
+- **Task 3:** Trending courses display with clickable animations and rotating text effects.
+- **Task 4:** Animated grid display cycling through different frames of lit cells to create a dynamic pattern.
+
+The app is built using React with Tailwind CSS and custom animations.
+
+---
+
+## Live Demo
+
+[Hosted on Vercel](https://vrit-technology.vercel.app/)
+
+---
+
+## Repository
+
+[GitHub Repo Link](https://github.com/zDaiki/Vrit_Technology)
+
+---
+
+## How to Run Locally
+
+1. Clone the repository:
+
 ```bash
-npm install
-npm run dev
+git clone https://github.com/zDaiki/Vrit_Technology.git
+cd Vrit_Technology

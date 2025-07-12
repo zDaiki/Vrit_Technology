@@ -21,7 +21,7 @@ const Task3 = () => {
           onClick={() => {
             setExpandedCard('all');
             setHighlightSmallCards(true);
-            setTimeout(() => setHighlightSmallCards(false), 200);
+            setTimeout(() => setHighlightSmallCards(false), 100);
           }}
           count="23"
           title="All Courses"

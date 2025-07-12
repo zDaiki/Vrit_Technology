@@ -117,3 +117,28 @@
   animation-play-state: running;
 }
 
+@keyframes revealCircle {
+  0% {
+    clip-path: circle(0% at 90% 10%);
+  }
+  100% {
+    clip-path: circle(150% at 90% 10%);
+  }
+}
+
+@keyframes hideCircle {
+  0% {
+    clip-path: circle(150% at 90% 10%);
+  }
+  100% {
+    clip-path: circle(0% at 90% 10%);
+  }
+}
+
+.reveal {
+  animation: revealCircle 0.8s ease forwards;
+}
+
+.hide {
+  animation: hideCircle 0.8s ease forwards;
+}

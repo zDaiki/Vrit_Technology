@@ -30,7 +30,7 @@ const Task1 = () => {
     setShowAmazing(prev => !prev);
   }, 3000); 
   return () => clearInterval(interval); 
-}, []);
+  }, []);
   const handleImage1Enter = () => {
     setHoveredImage1(true);
     setAnimateImage1('fade-zoom-in');
@@ -77,7 +77,7 @@ const Task1 = () => {
 
         <div className="relative w-[500px] h-[350px]">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-10">
-            <p className="text[#414141] mb-1 whitespace-nowrap text-lg">
+            <p className="text-[#414141] mb-1 whitespace-nowrap text-lg">
               Hear How They Level Up Their Game!
             </p>
             <h2 className="text-3xl  text-[#2B2B2B] font-bold whitespace-nowrap">

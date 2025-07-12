@@ -39,9 +39,9 @@ const Task2 = () => {
 
   const handleBlueCardClick = (direction) => {
     if (direction === 'right') {
-      setBlueHoverComponent('two');  // show second div
+      setBlueHoverComponent('two');  
     } else {
-      setBlueHoverComponent('one');  // show first div
+      setBlueHoverComponent('one');  
     }
   };
 
@@ -66,7 +66,6 @@ const Task2 = () => {
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
-            {/* Card 0 (redcard logic) */}
             {idx === 0 && (
               <div
                 className={`absolute inset-0 z-0 rounded-2xl transition-opacity duration-[1600ms] ease-in-out ${
@@ -77,7 +76,6 @@ const Task2 = () => {
               </div>
             )}
 
-            {/* Card 1 (bluefirst/bluesecond logic) */}
             {idx === 1 && (
               <div
                 className={`absolute inset-0 z-0 rounded-2xl  transition-opacity duration-[1600ms] ease-in-out ${
@@ -86,7 +84,6 @@ const Task2 = () => {
               >
                 {blueHoverComponent === 'one' ? <BlueHover1 /> : <BlueHover2 />}
 
-                {/* Invisible Click Areas */}
                 <div
                   className="absolute left-0 top-1/2 w-[50px] h-[20%] transform -translate-y-1/2 cursor-pointer z-10"
                   onClick={() => handleBlueCardClick('left')}
@@ -99,7 +96,6 @@ const Task2 = () => {
               </div>
             )}
 
-            {/* Frame / Custom div */}
               <div className={`w-full h-full relative z-10 transition-all duration-[1500ms] ease-in-out ${
                 hoveredIndex === idx && idx <= 1
                   ? '-translate-x-[100vw] opacity-0'
@@ -108,8 +104,6 @@ const Task2 = () => {
                 { idx ===0 ? (<RedCard />) : idx === 1 ? (<BlueCard/>) : idx === 2 ? (<PurpleCard/>) : (<BrownCard/>) }
               </div>
             
-
-            {/* Character image */}
             <img
               src={card.character}
               alt={`character-${idx}`}

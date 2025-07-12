@@ -11,7 +11,6 @@ const Task3 = () => {
 
   return (
     <div className="p-6 max-w-[1216px] mx-auto">
-      {/* Top texts */}
       <p className="text-left text-2xl text-gray-700 font-semibold mb-2">
         Explore our classes and master trending skills!
       </p>
@@ -19,7 +18,6 @@ const Task3 = () => {
         Dive Into <span className="text-[#1DA077]">What's Hot Right Now!</span> 🔥
       </h2>
 
-      {/* Cards row */}
       <div className="flex gap-8 w-[1216px] flex-wrap">
         
         <div className="bg-[#C33241] rounded-[32px] text-white p-6 w-[592px] h-[461px] relative overflow-hidden flex flex-col justify-between">
@@ -32,12 +30,10 @@ const Task3 = () => {
             View all Courses  <span className="text-xl animate-wiggle-horizontal">→</span>
           </div>
 
-          {/* Icons row */}
           <div className="mt-24 flex justify-center">
             <img src={icons} alt="Icons row"/>
           </div>
 
-          {/* Number and All Courses in same row */}
           <div className="mb-5 ml-14 w-[442px] h-[138px]">
             <div className="relative flex items-end">
               <h2 className="text-[150px] font-extrabold leading-none">
@@ -51,7 +47,6 @@ const Task3 = () => {
           </div>
         </div>
 
-        {/* Right two small cards */}
         <div className="flex gap-8">
           <div className={`bg-[#F9EBEC] text-[#C33241] rounded-2xl p-4 w-[280px] h-[461px] flex flex-col justify-between items-center transition-all duration-300 group ${selected ? 'bg-blue-100 ring-1 ring-emerald-500' : ''}`}>
             <img

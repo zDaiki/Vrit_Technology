@@ -38,7 +38,7 @@ const Task1 = () => {
 
   const handleImage1Leave = () => {
     setAnimateImage1('fade-zoom-out');
-    setTimeout(() => setHoveredImage1(false), 1); 
+    setHoveredImage1(false); 
   };
 
   const handleImage4Enter = () => {
@@ -48,7 +48,7 @@ const Task1 = () => {
 
   const handleImage4Leave = () => {
     setAnimateImage4('fade-zoom-out');
-    setTimeout(() => setHoveredImage4(false), 1);
+    setHoveredImage4(false);
   };
 
   return (
@@ -76,7 +76,6 @@ const Task1 = () => {
         )}
 
         <div className="relative w-[500px] h-[350px]">
-          {/* Center Text */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-10">
             <p className="text[#414141] mb-1 whitespace-nowrap text-lg">
               Hear How They Level Up Their Game!
@@ -94,7 +93,6 @@ const Task1 = () => {
             </p>
           </div>
 
-          {/* Image 1 with testimonial hover */}
           <div
             className={`absolute top-5 left-30 w-20 h-20 rounded-3xl overflow-visible shadow-md transition-all duration-500 ${
                 isHovered ? 'translate-x-[-180px] translate-y-[-80px] floating1' : ''
@@ -138,7 +136,6 @@ const Task1 = () => {
             <img src={image5} alt="User 4" className="w-full h-full object-cover" />
           </div>
 
-          {/* Image 4 */}
            <div
                 className={`absolute bottom-5 right-30 w-20 h-20 rounded-3xl overflow-visible shadow-md transition-all duration-500 ${
                     isHovered ? 'translate-x-[180px] translate-y-[120px] floating1' : ''
